@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huqt</title>
+  <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #70c5ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  canvas {
+    background: #4ec0ca;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #message {
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: none;
+    font-size: 1em;
+  }
+  #restartBtn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.rainbow.red    { color: #FF0000; }
+.rainbow.orange { color: #FF7F00; }
+.rainbow.yellow { color: #FFFF00; }
+.rainbow.green  { color: #00FF00; }
+.rainbow.blue   { color: #0000FF; }
+.rainbow.indigo { color: #4B0082; }
+.rainbow.violet { color: #8B00FF; }
+</style>
+
+</head>
+<body>
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+  <div id="message">
+  <span>🎉 <span class="rainbow orange">В</span>сичко прекрасно ти пожелавам – днес,</span><br>
+  <span><span class="rainbow yellow">И</span>зненади по-скъпи от Gucci ей така с финес.</span><br>
+  <span><span class="rainbow green">К</span>итката ти с диаманти да прави салта,</span><br>
+  <span><span class="rainbow blue">И</span>звестни да лазят пред теб в калта.</span><br>
+  <span><span class="rainbow indigo">Е</span>стествена кожа – само Fendi да носиш палта,</span><br>
+  <span><span class="rainbow violet">С</span> 24-каратови злата да ти е окичен врата.</span><br>
+  <span><span class="rainbow red">Т</span>ва е целта да заслепяваш с твойта красота,</span><br>
+  <span><span class="rainbow orange">Р</span>азлични скъпи курорти с лекота да си угаждаш.</span><br>
+  <span><span class="rainbow yellow">А</span>дски бързи бегачки – без усилие да караш,</span><br>
+  <span><span class="rainbow green">Х</span>уго Бос да ухае – щом се приближаваш.</span><br>
+  <span><span class="rainbow blue">О</span>чила Cartier – ей така да раздаваш,</span><br>
+  <span><span class="rainbow indigo">Т</span>ройно повече кеш от Мъск да изкарваш.</span><br>
+  <span><span class="rainbow violet">Н</span>ова мода с присъствието си да създаваш,</span><br>
+  <span><span class="rainbow red">А</span>налог да няма – щом някъде се появяваш. 🎂</span>
+</div>
+<button id="restartBtn" style="display: none;">🔁 Restart</button>
+  <script src="script.js"></script>
+</body>
+</html>
